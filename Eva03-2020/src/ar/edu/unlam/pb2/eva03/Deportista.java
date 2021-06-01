@@ -10,6 +10,24 @@ public class Deportista {
 		this.nombre = nombre;
 		this.numeroDeSocio = numeroDeSocio;
 	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Integer getNumeroDeSocio() {
+		return numeroDeSocio;
+	}
+
+	public void setNumeroDeSocio(Integer numeroDeSocio) {
+		this.numeroDeSocio = numeroDeSocio;
+	}
+	
+	
 	
 	
 

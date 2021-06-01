@@ -3,30 +3,32 @@ package ar.edu.unlam.pb2.eva03;
 public class Corredor extends Deportista{
 
 	private Integer distanciaPreferida;
+	private Integer kilometrosEntrenados;
 
 	public Corredor(Integer numeroDeSocio, String nombre, Integer distanciaPreferida) {
 		super(numeroDeSocio, nombre);
 		this.distanciaPreferida = distanciaPreferida;
+		kilometrosEntrenados = 0;
 	}
 
-	public void setCantidadDeKilometrosEntrenados(int i) {
-		// TODO Auto-generated method stub
-		
+	public void setCantidadDeKilometrosEntrenados(Integer kilometros) {
+
+		kilometrosEntrenados = kilometros;
 	}
 
-	public Object getDistanciaPreferida() {
+	public Integer getDistanciaPreferida() {
 		// TODO Auto-generated method stub
-		return null;
+		return distanciaPreferida;
 	}
 
-	public Object getCantidadDeKilometrosEntrenados() {
+	public Integer getCantidadDeKilometrosEntrenados() {
 		// TODO Auto-generated method stub
-		return null;
+		return kilometrosEntrenados;
 	}
 
-	public Object getNumeroDeSocio() {
+	public Integer getNumeroDeSocio() {
 		// TODO Auto-generated method stub
-		return null;
+		return super.getNumeroDeSocio();
 	}
 
 }

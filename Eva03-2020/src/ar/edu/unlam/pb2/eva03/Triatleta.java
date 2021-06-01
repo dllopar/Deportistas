@@ -5,26 +5,27 @@ import ar.edu.unlam.pb2.eva03.enumeradores.TipoDeBicicleta;
 public class Triatleta extends Deportista{
 
 	private String distanciaPreferida;
+	private TipoDeBicicleta tipo;
 
 	public Triatleta(Integer numeroDeSocio, String nombre, String distanciaPreferida, TipoDeBicicleta tipo) {
 		super(numeroDeSocio, nombre);
 		this.distanciaPreferida = distanciaPreferida;
-		
+		this.tipo = tipo;
 	}
 
-	public Object getDistanciaPreferida() {
+	public String getDistanciaPreferida() {
 		// TODO Auto-generated method stub
-		return null;
+		return distanciaPreferida;
 	}
 
-	public Object getNumeroDeSocio() {
+	public Integer getNumeroDeSocio() {
 		// TODO Auto-generated method stub
-		return null;
+		return super.getNumeroDeSocio();
 	}
 
-	public Object getTipoDeBicicleta() {
+	public TipoDeBicicleta getTipoDeBicicleta() {
 		// TODO Auto-generated method stub
-		return null;
+		return tipo;
 	}
 
 }

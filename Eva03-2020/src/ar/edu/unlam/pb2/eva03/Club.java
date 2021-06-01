@@ -1,5 +1,7 @@
 package ar.edu.unlam.pb2.eva03;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -13,54 +15,61 @@ public class Club {
 	
 	
 	public Club(String string) {
-		// TODO Auto-generated constructor stub
+		
+		this.nombre = nombre;
+		socios = new HashSet<>();
+		competencias = new HashMap<>();
 	}
 
 
 	public void agregarDeportista(Corredor corredor) {
-		// TODO Auto-generated method stub
+		
+		socios.add(corredor);
 		
 	}
 
 
 	public void agregarDeportista(Nadador nadador) {
-		// TODO Auto-generated method stub
+
+		socios.add(nadador);
 		
 	}
 
 
 	public void agregarDeportista(Ciclista ciclista) {
-		// TODO Auto-generated method stub
-		
+
+		socios.add(ciclista);
 	}
 
 
 	public void agregarDeportista(Triatleta triatleta) {
-		// TODO Auto-generated method stub
-		
+
+		socios.add(triatleta);
 	}
 
 
-	public Object getCantidadSocios() {
-		// TODO Auto-generated method stub
-		return null;
+	public Integer getCantidadSocios() {
+
+		return socios.size();
 	}
 
 
 	public void agregarDeportista(Deportista celeste) {
-		// TODO Auto-generated method stub
-		
+
+		socios.add(celeste);
 	}
 
 
-	public void crearEvento(TipoDeEvento carreraNatacionEnAguasAbiertas, String string) {
-		// TODO Auto-generated method stub
+	public void crearEvento(TipoDeEvento carreraNatacionEnAguasAbiertas, String nombreEvento) {
 		
+		Evento nuevoEvento = new Evento(carreraNatacionEnAguasAbiertas);
+
+		competencias.put(nombreEvento, nuevoEvento );
 	}
 
 
-	public Object inscribirEnEvento(String string, Deportista celeste) {
-		// TODO Auto-generated method stub
+	public Object inscribirEnEvento(String string, Deportista deportista) {
+
 		return null;
 	}
 	

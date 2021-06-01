@@ -12,12 +12,12 @@ public class Nadador extends Deportista{
 
 	public String getEstiloPreferido() {
 		// TODO Auto-generated method stub
-		return null;
+		return estiloPreferido;
 	}
 
-	public Object getNumeroDeSocio() {
+	public Integer getNumeroDeSocio() {
 		// TODO Auto-generated method stub
-		return null;
+		return super.getNumeroDeSocio();
 	}
 
 }
